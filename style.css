@@ -67,6 +67,77 @@ header {
     margin-bottom: 5px;
 }
 
+/* company section */
+main{
+    max-width: 1440px;
+    margin: 80px 150px;
+}
+.company{
+    max-width: 100%;
+    
+}
+.company-logo{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    /* border: 1px solid #C0CCDA; */
+    box-shadow: 1px 1px 1px 1px #C0CCDA;
+    padding: 20px;
+}
+
+
+/* card section */
+.card-section{
+    margin-top: 100px;
+}
+.card-title{
+    text-align: center;
+}
+.card-store{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+.card-container{
+    background-color: #fafafa;
+    padding: 20px;
+}
+.card{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card-text{
+    margin-top: 10px;
+}
+.card-item-name{
+    margin-bottom: 10px;
+}
+.card-text h5{
+    margin-top: 10px;
+}
+.review-star{
+    display: flex;
+    align-items: center;
+    margin-top: calc(-20px);
+}
+.review-star p{
+    margin-left: 7px;
+}
+.card-description{
+    margin-top: calc(-10px);
+}
+
+.card-btn{
+    color: #E02C6D;
+    background-color: white;
+    float: inline-end;
+    border: none;
+    padding: 20px;
+    margin-top: 10px;
+}
+
 /* responsive for small device */
 
 @media screen and (max-width:576px) {
@@ -89,4 +160,49 @@ header {
             
             margin-left: 15px;
         }
+
+        /* company */
+                main {
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+                .company-logo {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr) ;
+                    justify-items: center;
+                    margin-top: 20px;
+                }
+                .company-logo img{
+                    margin-top: 10px;
+                }
+
+                /* card-section */
+                .card-store {
+                               display: grid;
+                               grid-template-columns: repeat(1, 1fr);
+                           }
+    }
+
+
+    /* responsive for medium device */
+    @media screen and (min-width : 576px) and (max-width : 992px) {
+        main {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        
+            .company-logo {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                justify-items: center;
+                margin-top: 40px;
+            }
+        
+            .company-logo img {
+                margin-top: 20px;
+            }
+                .card-store {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
     }
