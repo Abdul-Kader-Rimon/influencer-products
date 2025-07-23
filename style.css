@@ -158,6 +158,16 @@ main{
     margin-top: 10px;
 }
 
+/* footer section */
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
 /* responsive for small device */
 
 @media screen and (max-width:576px) {
